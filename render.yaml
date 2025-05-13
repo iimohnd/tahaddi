@@ -2,13 +2,14 @@
 
 services:
   - type: web
-    name: tahaddi-alhuroof
+    name: tahaddi
     env: node
-    plan: free
-    buildCommand: npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
+      - key: NODE_VERSION
+        value: 18.18.2
       - key: NEXT_PUBLIC_SUPABASE_URL
-        value: https://rqygszqmnnsvperfvyvt.supabase.co
+        value: https://yybetfkwexcyizmkizsu.supabase.co
       - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxeWdzenFtbm5zdnBlcmZ2eXZ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcwMzQ0MDgsImV4cCI6MjA2MjYxMDQwOH0.VD6d4rV7Z6r7MwCWnnqXshRdSm2_4GJtu7XdPIgpC3g
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5YmV0Zmt3ZXhjeWl6bWtpenN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcxMjA3NDAsImV4cCI6MjA2MjY5Njc0MH0.1CH3Cnnvb5EcrTVQz2LCPqe_lBeVOz3rmEsoxS1JH1s
