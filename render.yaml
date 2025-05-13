@@ -1,0 +1,14 @@
+# render.yaml
+
+services:
+  - type: web
+    name: tahaddi-alhuroof
+    env: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        value: https://rqygszqmnnsvperfvyvt.supabase.co
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxeWdzenFtbm5zdnBlcmZ2eXZ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcwMzQ0MDgsImV4cCI6MjA2MjYxMDQwOH0.VD6d4rV7Z6r7MwCWnnqXshRdSm2_4GJtu7XdPIgpC3g
